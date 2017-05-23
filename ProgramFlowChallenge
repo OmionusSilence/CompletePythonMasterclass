@@ -43,7 +43,7 @@ if IP:
             numLen = 0
             index += 1
             continue
-        if not index == len(IP)-1:
+        elif (not index == len(IP)-1) and char in "0123456789":
             numLen += 1
         index += 1
     print("IP segment {} has {} numbers.".format(segmentCount, numLen))
